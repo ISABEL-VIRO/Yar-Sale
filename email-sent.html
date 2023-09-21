@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create new Password</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    html{
+      /* rem a 10px */
+      font-size: 62.5% 
+    }
+
+    :root{
+      --very-ligth-pink: #c7c7c7;
+      --text-input-field:#F7f7f7;
+      --hospital-green:#ACD9B2;
+      --white:#ffffff;
+      --black:#000000;
+      --sm:1.4rem;
+      --md:1.6rem;
+      --lg:1.8rem;
+    }
+
+    body{
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+
+    }
+
+    .login {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .form-container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: 300px;
+      justify-items: center;
+    }
+
+    .logo {
+        width: 150px;
+        margin: 48px 0 48px 0;
+        justify-self: center;
+        display: none;
+      }
+
+      .title{
+        font-size:var(--lg);
+        margin-bottom: 12px;
+        text-align: center;
+       }
+
+      .sub-title{
+        color:var(--very-ligth-pink);
+        font-size:var(--md);
+        font-weight:300;
+        margin: 0 0 32px 0;
+        text-align: center;
+      }
+
+      .email-img{
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+        background-color: var(--text-input-field);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 33px;
+
+      }
+
+      .email-img img{ 
+        width: 70px;
+      }
+
+      .resend{
+        font-size: var(--sm);
+
+      }
+      
+      .resend span{
+        color: var(--very-ligth-pink);
+        
+      }
+
+      .resend a{
+        color: var(--hospital-green);
+        text-decoration: none;
+        
+      }
+
+
+      .btn-primary{
+        background-color: var(--hospital-green);
+        border-radius: 8px;
+        border: none;
+        color:var(--white);
+        width: 100%;
+        cursor:pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+
+      }
+
+      .btn-login{
+        margin-top: 15px;
+        margin-bottom: 30px;
+      }
+
+      
+      @media (maxgit-width:640px){
+        .logo{
+          display: block;
+        }
+      }
+        
+      
+  </style>
+</head>
+<body>
+  <div class="login">
+    <div class="form-container">
+      <img class="logo" alt="logo" src="./logos/logo_yard_sale.svg">
+
+      <h1 class="title">Email has been sent! </h1>
+      <p class="sub-title">
+        Please check your inbox for instructions on how to reset the password
+      </p>
+
+      <div class="email-img">
+        <img src="./icons/email.svg" alt="" class="icon">
+      </div>
+      
+      <button type="submit" class="btn-primary btn-login">Login</button>
+
+      <p class="resend">
+        <span>Didn't receive the email?</span>
+        <a href="#">Resend</a>
+      </p>
+
+
+      
+    </div>
+  </div>
+</body>
+</html>
