@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+       html{
+        /* rem a 10px */
+        font-size: 62.5% 
+      }
+  
+      :root{
+        --very-ligth-pink: #c7c7c7;
+        --text-input-field:#F7f7f7;
+        --hospital-green:#ACD9B2;
+        --white:#ffffff;
+        --black:#000000;
+        --sm:1.4rem;
+        --md:1.6rem;
+        --lg:1.8rem;
+      }
+  
+      body{
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        font-size: var(--md);
+  
+      }
+
+      nav{
+       display: flex;
+        justify-content: space-between;
+        align-items: center;
+       padding: 0 24px;
+       border-bottom: 1px solid var(--very-ligth-pink);
+
+      }
+      .menu{
+        display: none;
+      }
+      
+        .logo{
+          width:150px;
+        }
+        .navbar-left {
+          display: flex;
+          column-gap:33px;
+                  
+        }
+
+        .navbar-left ul,
+        .navbar-rigth ul{
+          list-style: none;
+          padding: 0;
+           display: flex;
+          align-items: center;
+          height: 60px;
+         
+        }
+
+      
+        .navbar-left ul li a,
+        .navbar-rigth ul li a{
+         text-decoration: none;
+         color: var(--very-ligth-pink);
+         border: 1px solid var(--white);
+         padding: 8px;
+         border-radius: 8px;
+        }
+
+        .navbar-left ul li a:hover,
+        .navbar-rigth ul li a:hover{
+        color: var(--hospital-green);
+         border: 1px solid var(--hospital-green);
+        }
+
+        
+        .navbar-email{
+            color: var(--very-ligth-pink);
+            font-size: var(--sm);
+            margin-right: 12px;
+        }
+
+        .navbar-shopping-cart{
+          position: relative;
+        }
+
+        .navbar-shopping-cart div{
+          position: absolute;
+          top:-7px;
+          right:-5px;
+          width:15px;
+          height:15px;
+          font-size: var(--sm);
+          font-weight: bold;
+          background-color: var(--hospital-green);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 1px;
+          border-radius: 50%;
+        }
+
+        @media (max-width:640px){
+          .menu{
+            display: block;
+          }
+
+          .navbar-left ul{
+            display: none;
+          }
+
+          .navbar-email{
+            display: none;
+          }
+        }
+
+
+
+      </style>
+
+</head>
+<body>
+  <nav>
+    <img src="./icons/icon_menu.svg" alt="icon_menu" class="menu">
+
+    <div class="navbar-left">
+      <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+
+      <ul>
+        <li><a href="#">All</a></li>
+        <li><a href="#">Clothes</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Furnitures</a></li>
+        <li><a href="#">Toys</a></li>
+        <li><a href="#">Others</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-rigth">
+      <ul>
+        <li class="navbar-email">isabel@gmail.com</li>
+        <li class="navbar-shopping-cart"> <img src="./icons/icon_shopping_cart.svg" alt="">
+        <div>2</div>
+      </li>
+      </ul>
+    </div>
+  </nav>
+
+</body>
+</html>
